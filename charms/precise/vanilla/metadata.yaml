@@ -1,20 +1,14 @@
 name: vanilla
-summary: metadata.yaml arquivo inicial
-maintainer: cloud <cloud@maas>
+summary: Vanilla is an open-source, pluggable, themeable, multi-lingual forum.
+maintainer: Antonio Sigrist <antoniols3@al.insper.edu.br>
 description: |
-  Descricao x
+  Vanilla is designed to deploy and grow small communities to scale.
+  This charm deploys Vanilla Forums as outlined by the Vanilla Forums installation guide.
 tags:
-  # Replace "misc" with one or more whitelisted tags from this list:
-  # https://jujucharms.com/docs/stable/authors-charm-metadata
-  - misc
-  - tutorials
-subordinate: false
+  - social
 provides:
-  provides-relation:
+  website:
     interface: http
 requires:
-  requires-relation:
-    interface: http
-peers:
-  peer-relation:
-    interface: http
+  database:
+    interface: mysql
