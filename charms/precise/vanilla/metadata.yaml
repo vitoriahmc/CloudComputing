@@ -1,0 +1,20 @@
+name: vanilla
+summary: metadata.yaml arquivo inicial
+maintainer: cloud <cloud@maas>
+description: |
+  Descricao x
+tags:
+  # Replace "misc" with one or more whitelisted tags from this list:
+  # https://jujucharms.com/docs/stable/authors-charm-metadata
+  - misc
+  - tutorials
+subordinate: false
+provides:
+  provides-relation:
+    interface: http
+requires:
+  requires-relation:
+    interface: http
+peers:
+  peer-relation:
+    interface: http

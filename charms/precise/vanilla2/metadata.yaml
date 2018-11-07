@@ -1,0 +1,16 @@
+name: vanilla2
+summary: roteiro 2 deploy charm
+maintainer: Vitoria Mattos <vitoriahmc@al.insper.edu.br>
+description: |
+  Vanilla is designed to deploy and grow small communities to scale.
+  This charm deploys Vanilla Forums as outlined by the Vanilla Forums installation guide.
+tags:
+  - social
+provides:
+  website:
+    interface: http
+requires:
+  database:
+    interface: mysql
+
+
